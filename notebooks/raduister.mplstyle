@@ -39,8 +39,10 @@ animation.writer : ffmpeg
 axes.autolimit_mode : data              # modo de cálculo automático de limites
 axes.axisbelow : line                   # grid / ticks ficam abaixo das linhas (“line” / “both” / None)
 
-axes.edgecolor : "#CCCCCCFF"            # cor das bordas dos eixos
-axes.facecolor : "#F7F7F7FF"            # cor de fundo do eixo
+axes.edgecolor : "#1f2022ff"            # cor das bordas dos eixos
+axes.facecolor : "#1f2022ff"            # cor de fundo do eixo
+# axes.edgecolor : "#CCCCCCFF"            # cor das bordas dos eixos
+# axes.facecolor : "#F7F7F7FF"            # cor de fundo do eixo
 
 axes.formatter.limits : -5, 6           # limite de potência para notação científica
 axes.formatter.min_exponent : 0
@@ -53,14 +55,14 @@ axes.grid : True                       # por padrão, não exibe grid
 axes.grid.axis : both
 axes.grid.which : both
 
-axes.labelcolor : "#111111ff"
-axes.labelpad : 4.0                     # distância entre rótulo e eixo
+axes.labelcolor : "#f5f5f5ff"
+axes.labelpad : 5                     # distância entre rótulo e eixo
 axes.labelsize : medium
 axes.labelweight : normal
 
 axes.linewidth : 0.25                    # espessura da linha do eixo
 
-axes.prop_cycle : cycler(color=["#e4b62cff", "#4587c2ff", "#cfe2f3ff", "#fff2ccff"])  # ciclo de cores para múltiplas linhas
+axes.prop_cycle : cycler(color=["#fabc5eff", "#a3b4e4ff", "#cfe2f3ff", "#fff2ccff"])  # ciclo de cores para múltiplas linhas
 
 axes.spines.bottom : True
 axes.spines.left : True
@@ -69,7 +71,7 @@ axes.spines.top : True
 
 axes.titlecolor : auto
 axes.titlelocation : center
-axes.titlepad : 6.0                     # espaçamento para o título
+axes.titlepad : 15.0                     # espaçamento para o título
 axes.titlesize : large
 axes.titleweight : normal
 axes.titley : None
@@ -145,6 +147,7 @@ contour.negative_linestyle : dashed
 # 6 — Datas / Datas automáticas / conversores
 ###############################################################################
 date.autoformatter.day : %Y-%m-%d
+date.autoformatter.day : %d.%m.%Y
 date.autoformatter.hour : %m-%d %H
 date.autoformatter.microsecond : %M:%S.%f
 date.autoformatter.minute : %d %H:%M
@@ -181,7 +184,7 @@ figure.dpi : 150.0
 # Cor da borda da figura
 figure.edgecolor : white
 # Cor de fundo da figura
-figure.facecolor : white
+figure.facecolor : "#1f2022ff"
 
 # Tamanho padrão (largura, altura) em polegadas
 figure.figsize : 6.4, 4.8
@@ -213,7 +216,7 @@ font.fantasy : Chicago, Charcoal, Impact, Western, xkcd script, fantasy
 font.monospace : DejaVu Sans Mono, Bitstream Vera Sans Mono, Computer Modern Typewriter, Andale Mono, Nimbus Mono L, Courier New, Courier, Fixed, Terminal, monospace
 font.sans-serif : Helvetica Neue, New Helvetica, Helvetica, Segoe UI, DejaVu Sans, Arial, sans-serif
 font.serif : DejaVu Serif, Bitstream Vera Serif, Computer Modern Roman, New Century Schoolbook, Century Schoolbook L, Utopia, ITC Bookman, Bookman, Nimbus Roman No9 L, Times New Roman, Times, Palatino, Charter, serif
-font.size : 10.0                          # tamanho padrão da fonte
+font.size : 12.0                          # tamanho padrão da fonte
 font.stretch : normal
 font.style : normal
 font.variant : normal
@@ -222,8 +225,8 @@ font.weight : normal
 ###############################################################################
 # 11 — Grid
 ###############################################################################
-grid.alpha : 0.35
-grid.color : "#CCCCCC"
+grid.alpha : 0.5
+grid.color : "#313236ff"
 grid.linestyle : -
 grid.linewidth : 0.4
 
@@ -273,21 +276,21 @@ keymap.zoom : o
 # 16 — Legenda (legend)
 ###############################################################################
 legend.borderaxespad : 0.5
-legend.borderpad : 0.4
+legend.borderpad : 0.75
 legend.columnspacing : 2.0
-legend.edgecolor : 0.8
+legend.edgecolor : "#252525ff"
 legend.facecolor : inherit
 legend.fancybox : True
-legend.fontsize : medium
-legend.framealpha : 0.8
-legend.frameon : False
+legend.fontsize : small
+legend.framealpha : 0.5
+legend.frameon : True
 legend.handleheight : 0.7
 legend.handlelength : 2.0
 legend.handletextpad : 0.8
-legend.labelcolor : "#111111ff"
-legend.labelspacing : 0.5
+legend.labelcolor : "#f5f5f5ff"
+legend.labelspacing : 0.6
 legend.loc : best
-legend.markerscale : 1.0
+legend.markerscale : 0.67
 legend.numpoints : 1
 legend.scatterpoints : 1
 legend.shadow : False
@@ -304,12 +307,12 @@ lines.dashdot_pattern : 6.4, 1.6, 1.0, 1.6
 lines.dashed_pattern : 3.7, 1.6
 lines.dotted_pattern : 1.0, 1.65
 lines.linestyle : -
-lines.linewidth : 1.0
+lines.linewidth : 1.2
 lines.marker : None
 lines.markeredgecolor : auto
-lines.markeredgewidth : 1.0
+lines.markeredgewidth : 0.75
 lines.markerfacecolor : auto
-lines.markersize : 6.0
+lines.markersize : 6
 lines.scale_dashes : True
 lines.solid_capstyle : projecting
 lines.solid_joinstyle : round
@@ -422,7 +425,7 @@ svg.image_inline : True
 # 31 — Texto (text)
 ###############################################################################
 text.antialiased : True
-text.color : black
+text.color : "#f5f5f5ff"
 text.hinting : force_autohint
 text.hinting_factor : 8
 text.kerning_factor : 0
@@ -458,17 +461,17 @@ xaxis.labellocation : center
 ###############################################################################
 xtick.alignment : center
 xtick.bottom : True
-xtick.color : "#CCCCCC"
+xtick.color : "#313236ff"
 xtick.direction : out
 
 xtick.labelbottom : True
-xtick.labelcolor : "#111111ff"
+xtick.labelcolor : "#f5f5f5ff"
 xtick.labelsize : medium
 xtick.labeltop : False
 
 xtick.major.bottom : True
 xtick.major.pad : 3.5
-xtick.major.size : 2.0
+xtick.major.size : 3.0
 xtick.major.top : True
 xtick.major.width : 0.5
 
@@ -488,10 +491,10 @@ xtick.top : False
 yaxis.labellocation : center
 
 ytick.alignment : center_baseline
-ytick.color : "#CCCCCC"
+ytick.color : "#313236ff"
 ytick.direction : out
 
-ytick.labelcolor : "#111111ff"
+ytick.labelcolor : "#f5f5f5ff"
 ytick.labelleft : True
 ytick.labelright : False
 ytick.labelsize : medium
@@ -501,7 +504,7 @@ ytick.left : True
 ytick.major.left : True
 ytick.major.pad : 3.5
 ytick.major.right : True
-ytick.major.size : 2.0
+ytick.major.size : 3.0
 ytick.major.width : 0.5
 
 ytick.minor.left : True
